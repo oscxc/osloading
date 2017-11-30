@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>osloading demo</title>
+    <link rel="stylesheet" href="osloading.css">
+    <script src="osloading.js"></script>
+</head>
+<body>
+<div class='loading' style="width: 300px;height: 300px;"></div>
+<script>
+    var el = document.querySelector('.loading');
+    var loading = new osloading({
+        el:el,
+        type:2,
+        color:"#fe7f02",
+        backgroundColor:"#333",
+        opacity:1
+    });
+    loading.show();
+    setTimeout(function () {
+        el.style.width = el.style.height = 600 + 'px';
+    },2000);
+    setTimeout(function () {
+        loading.remove();
+    },4000);
+</script>
+</body>
+</html>

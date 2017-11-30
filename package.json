@@ -1,0 +1,23 @@
+{
+  "name": "osloading",
+  "version": "1.0.0",
+  "description": "7种loading特效模块",
+  "main": "osloading.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oscxc/osloading.git"
+  },
+  "keywords": [
+    "osloading",
+    "loading"
+  ],
+  "author": "七八个星天怪",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/oscxc/osloading/issues"
+  },
+  "homepage": "https://github.com/oscxc/osloading#readme"
+}

@@ -1,0 +1,174 @@
+.CLoading1,.CLoading2,.CLoading3,.CLoading4,.CLoading5,.CLoading6,.CLoading7{
+    position: absolute;
+    top:0;
+    left: 0;
+    display: none;
+    z-index: 10086;
+}
+/*region CLoading1*/
+.CLoading1 > div{
+    position:absolute;
+    width:100px;
+    height: 30px;
+    line-height: 30px;
+    left:50%;
+    top:50%;
+    margin-left: -50px;
+    margin-top: -15px;
+    text-align: center;
+    font-family: Verdana;
+}
+.CLoading1 > div >span:nth-child(2){
+    animation: CLoading1 1.2s infinite ease-in-out;
+}
+.CLoading1 > div >span:nth-child(3){
+    animation: CLoading1 1.2s infinite ease-in-out;
+    animation-delay: -1s;
+}
+.CLoading1 > div >span:nth-child(4){
+    animation: CLoading1 1.2s infinite ease-in-out;
+    animation-delay: -.8s;
+}
+@keyframes CLoading1 {
+    from {
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
+/*endregion*/
+
+/*region CLoading2*/
+.CLoading2 > div {
+    position:absolute;
+    width:60px;
+    height: 60px;
+    left:50%;
+    top:50%;
+    margin-left: -30px;
+    margin-top: -30px;
+}
+.CLoading2 > div > *{
+    height: 100%;
+    width: 6px;
+    display: inline-block;
+    margin: 0 3px;
+    animation: CLoading2 1.0s infinite ease-in-out;
+}
+.CLoading2 > div > *:nth-child(2){
+    animation-delay: -0.9s;
+}
+.CLoading2 > div > *:nth-child(3){
+    animation-delay: -0.8s;
+}
+.CLoading2 > div > *:nth-child(4){
+    animation-delay: -0.7s;
+}
+.CLoading2 > div > *:nth-child(5){
+    animation-delay: -0.6s;
+}
+@keyframes CLoading2 {
+    0%, 40%, 100% {
+        transform: scaleY(0.4);
+    }  20% {
+           transform: scaleY(1.0);
+       }
+}
+/*endregion*/
+
+/*region CLoading3*/
+.CLoading3 > div {
+    position:absolute;
+    width:60px;
+    height: 60px;
+    left:50%;
+    top:50%;
+    margin-left: -36px;
+    margin-top: -36px;
+    border: 6px solid rgba(255, 255, 255, 0.2);
+    border-left: 6px solid #ffffff;
+    border-radius: 50%;
+    animation: CLoading3 1.1s infinite linear;
+}
+@keyframes CLoading3 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+/*endregion*/
+
+/*region CLoading4*/
+.CLoading4 > div{
+    position: absolute;
+    width: 112px;
+    height: 20px;
+    top:50%;
+    left: 50%;
+    margin-top: -10px;
+    margin-left: -56px;
+}
+.CLoading4 > div > *{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 0 4px;
+    background-color: white;
+    display: inline-block;
+    animation: CLoading4 1.2s infinite ease-in-out;
+}
+.CLoading4 > div > div:nth-child(1){
+    animation-delay: -0.3s;
+}
+.CLoading4 > div > div:nth-child(2){
+    animation-delay: -0.2s;
+}
+.CLoading4 > div > div:nth-child(3){
+    animation-delay: -0.1s;
+}
+.CLoading4 > div > div:nth-child(4){
+    animation-delay: -0.0s;
+}
+@keyframes CLoading4 {
+    0% {
+        transform: scale(0,0);
+    }
+    50%{
+        transform: scale(1,1);
+    }
+    100% {
+        transform: scale(0,0);
+    }
+}
+/*endregion*/
+
+/*region CLoading5*/
+.CLoading5 > div,.CLoading6 > div,.CLoading7 > div{
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    margin-left: -6px;
+    margin-top: -6px;
+    border-radius: 50%;
+    top:50%;
+    left: 50%;
+}
+.CLoading5 > div{
+    animation: CLoading5 1s infinite ease;
+}
+/*endregion*/
+
+/*region CLoading6*/
+.CLoading6 > div{
+    animation: CLoading6 1.3s infinite ease;
+}
+/*endregion*/
+
+/*region CLoading7*/
+.CLoading7 > div{
+    animation: CLoading7 1.8s infinite ease;
+}
+/*endregion*/
